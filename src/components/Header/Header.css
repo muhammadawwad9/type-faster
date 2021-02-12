@@ -3,7 +3,6 @@
   background-color: #1f4287;
   display: flex;
   justify-content: space-evenly;
-  word-wrap: normal;
 }
 
 .Header .header-elem {

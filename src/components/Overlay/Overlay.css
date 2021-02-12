@@ -35,7 +35,6 @@
   outline: none;
   border: none;
   cursor: pointer;
-  -webkit-appearance: none;
 }
 
 .level-selection button:hover {

@@ -8,7 +8,7 @@
   opacity: 1;
   z-index: 1200;
   display: flex;
-  justify-content: center;
+  content: center;
   align-items: center;
   row-gap: 55px;
   opacity: 0.9;
