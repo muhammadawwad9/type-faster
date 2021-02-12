@@ -1,7 +1,7 @@
 
 # type-faster 
 
-  <h2 align="center"><a href="#">PLAY NOW</a></h2>
+  <h2 align="center"><a href="https://flamboyant-blackwell-44d786.netlify.app/">PLAY NOW</a></h2>
 
 
 ## Description about the game :
