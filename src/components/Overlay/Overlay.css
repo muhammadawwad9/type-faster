@@ -67,6 +67,14 @@
   #time-to-start {
     font-size: 150px;
   }
+
+  .level-selection {
+    row-gap: 50px;
+  }
+
+  .description {
+    text-align: center;
+  }
 }
 
 @media all and (max-width: 570px) {
