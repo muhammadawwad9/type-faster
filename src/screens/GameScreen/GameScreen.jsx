@@ -64,7 +64,7 @@ const GameScreen = ({
     }
     switch (level) {
       case "easy":
-        setTime(200);
+        setTime(12);
         setTimeDecrement(3);
         setTimeIncrement(4);
         break;
