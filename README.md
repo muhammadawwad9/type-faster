@@ -1,7 +1,7 @@
 
 # type-faster 
 
-  <h2 align="center"><a href="#">TRY IT NOW</a></h2>
+  <h2 align="center"><a href="#">PLAY NOW</a></h2>
 
 
 ## Description about the game :
