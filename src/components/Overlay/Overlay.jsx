@@ -25,7 +25,7 @@ const Overlay = ({ setLevel, setStartTheGame }) => {
   }, [timeToStart]);
   return (
     <div className="Overlay">
-      <div className="describtion">
+      <div className="description">
         <p>
           In this game you can check how fast you are on the keyboard!.
           <br />

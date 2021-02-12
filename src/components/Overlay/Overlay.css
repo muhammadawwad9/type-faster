@@ -45,7 +45,7 @@
   transition-duration: 0.3s;
 }
 
-.describtion {
+.description {
   width: 50%;
 }
 
@@ -58,7 +58,7 @@
 }
 
 @media all and (max-width: 950px) {
-  .describtion {
+  .description {
     width: 90%;
   }
 }
@@ -70,7 +70,7 @@
 }
 
 @media all and (max-width: 570px) {
-  .describtion {
+  .description {
     width: 90%;
     font-size: 22px;
   }
