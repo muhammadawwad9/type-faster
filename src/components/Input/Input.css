@@ -1,0 +1,21 @@
+.Input {
+  width: 550px;
+  display: flex;
+  justify-content: center;
+}
+
+.Input input {
+  font-size: 32px;
+  color: #1f4287;
+  font-weight: bold;
+  padding: 5px;
+  outline: none;
+  width: 100%;
+}
+
+@media all and (max-width: 570px) {
+  .Input input {
+    width: 355px;
+    font-size: 25px;
+  }
+}

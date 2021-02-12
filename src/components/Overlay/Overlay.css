@@ -1,0 +1,94 @@
+.Overlay {
+  z-index: 1000;
+  background-color: #000;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.9;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 40px;
+  font-size: 30px;
+  padding-top: 50px;
+}
+
+.level-selection {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.level-selection select {
+  font-size: 45px;
+  cursor: pointer;
+}
+
+.level-selection button {
+  font-size: 48px;
+  width: 300px;
+  padding: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.level-selection button:hover {
+  border: 2px solid green;
+  background-color: green;
+  color: #fff;
+  font-weight: bold;
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+
+.describtion {
+  width: 50%;
+}
+
+.hide {
+  display: none;
+}
+
+#time-to-start {
+  font-size: 200px;
+}
+
+@media all and (max-width: 950px) {
+  .describtion {
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 720px) {
+  #time-to-start {
+    font-size: 150px;
+  }
+}
+
+@media all and (max-width: 570px) {
+  .describtion {
+    width: 90%;
+    font-size: 22px;
+  }
+
+  .level-selection select {
+    font-size: 35px;
+    cursor: pointer;
+  }
+
+  .level-selection button {
+    font-size: 40px;
+    width: 300px;
+    padding: 5px;
+    outline: none;
+    cursor: pointer;
+  }
+
+  #time-to-start {
+    font-size: 100px;
+  }
+}

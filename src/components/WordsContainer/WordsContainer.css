@@ -1,0 +1,41 @@
+.WordsContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  font-size: 25px;
+  padding-left: 50px;
+  margin: 30px 0px;
+}
+
+.words {
+  display: flex;
+  color: #1f4287;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+
+.passed-word {
+  color: #0de00d;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.failed-word {
+  color: red;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.words span {
+  border-right: 1px solid #1f4287;
+  padding: 5px;
+}
+
+@media all and (max-width: 570px) {
+  .WordsContainer {
+    display: none;
+  }
+  hr {
+    display: none;
+  }
+}
