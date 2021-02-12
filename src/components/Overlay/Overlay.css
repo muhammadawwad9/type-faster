@@ -33,6 +33,7 @@
   width: 300px;
   padding: 5px;
   outline: none;
+  border: none;
   cursor: pointer;
 }
 
