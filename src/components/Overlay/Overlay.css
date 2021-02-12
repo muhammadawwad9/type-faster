@@ -35,6 +35,7 @@
   outline: none;
   border: none;
   cursor: pointer;
+  -webkit-appearance: none;
 }
 
 .level-selection button:hover {
@@ -83,10 +84,6 @@
 
   .level-selection button {
     font-size: 40px;
-    width: 300px;
-    padding: 5px;
-    outline: none;
-    cursor: pointer;
   }
 
   #time-to-start {
