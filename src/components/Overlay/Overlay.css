@@ -37,9 +37,6 @@
   cursor: pointer;
   transition-property: all;
   transition-duration: 0.3s;
-  -webkit-appearance: none;
-  border-radius: 0;
-  opacity: 1;
 }
 
 .level-selection button:hover {
@@ -86,6 +83,9 @@
 
   .level-selection button {
     font-size: 40px;
+    -webkit-appearance: none;
+    border-radius: 0;
+    opacity: 1;
   }
 
   #time-to-start {
