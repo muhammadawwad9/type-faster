@@ -51,12 +51,12 @@
   font-size: 48px;
   width: 300px;
   padding: 5px;
-  outline: none;
+  /* outline: none;
   border: none;
-  cursor: pointer;
+  cursor: pointer; */
 }
 
-.level-selection button:hover {
+/* .level-selection button:hover {
   border: 2px solid green;
   background-color: green;
   color: #fff;
@@ -67,7 +67,7 @@
   -webkit-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
-}
+} */
 
 .description {
   width: 50%;
