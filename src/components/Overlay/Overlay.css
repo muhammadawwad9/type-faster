@@ -32,9 +32,9 @@
   font-size: 48px;
   width: 300px;
   padding: 5px;
-  outline: none;
-  border: none;
-  /* cursor: pointer; */
+  /* outline: none;
+  border: none; */
+  cursor: pointer;
   transition-property: all;
   transition-duration: 0.3s;
 }
