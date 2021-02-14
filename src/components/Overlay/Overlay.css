@@ -6,7 +6,7 @@
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 1;
+  opacity: 0.9;
   color: #fff;
   font-weight: bold;
   display: flex;
@@ -83,9 +83,6 @@
 
   .level-selection button {
     font-size: 40px;
-    -webkit-appearance: none;
-    border-radius: 0;
-    opacity: 1;
   }
 
   #time-to-start {
