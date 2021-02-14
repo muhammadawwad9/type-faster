@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .Overlay {
   z-index: 1000;
   background-color: #000;
@@ -9,8 +16,15 @@
   opacity: 0.9;
   color: #fff;
   font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   row-gap: 40px;
   font-size: 30px;
@@ -18,7 +32,12 @@
 }
 
 .level-selection {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   row-gap: 20px;
 }
@@ -42,7 +61,11 @@
   background-color: green;
   color: #fff;
   font-weight: bold;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
   transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
 
