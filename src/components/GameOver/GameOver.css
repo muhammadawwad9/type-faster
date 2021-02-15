@@ -84,4 +84,10 @@
     font-size: 18px;
     width: 120px;
   }
+
+  .new-high-score {
+    display: flex;
+    font-size: 20px;
+    column-gap: 12px;
+  }
 }
