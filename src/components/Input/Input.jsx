@@ -53,7 +53,6 @@ const Input = ({
           if (e.target.value.length == currentWord.length) checkWord(e);
         }}
       />
-      <button>TEST</button>
     </div>
   );
 };
