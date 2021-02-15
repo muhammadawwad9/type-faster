@@ -38,7 +38,7 @@ const Input = ({
       incorrect.play();
       setTime((prev) => prev - timeDecrement);
       setFailedWordsArr((prev) => {
-        return [...prev, e.target.value];
+        return [...prev, currentWord.toLowerCase()];
       });
     }
     await setCrrentWord(randomWord(wordsArr));

@@ -1,14 +1,13 @@
 .GameOver {
   position: absolute;
-  /* top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px; */
   min-height: 100vh;
   width: 100%;
   background-color: #000;
-  opacity: 1;
   z-index: 1200;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
   display: flex;
   content: center;
   align-items: center;
@@ -16,6 +15,15 @@
   opacity: 0.9;
   color: #fff;
   flex-direction: column;
+}
+
+.gameover-items {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 45px;
 }
 
 .GameOver .game-over-word {
@@ -64,11 +72,16 @@
     display: none;
   }
 
-  .GameOver .game-over-word {
-    font-size: 50px;
+  .gameover-items .game-over-word {
+    font-size: 45px;
   }
 
-  .GameOver .message {
+  .gameover-items .message {
     font-size: 18px;
+  }
+
+  .gameover-items button {
+    font-size: 18px;
+    width: 120px;
   }
 }
