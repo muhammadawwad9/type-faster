@@ -6,11 +6,12 @@
 }
 
 .Header .header-elem {
+  height: 95%;
+  padding-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  row-gap: 8px;
+  justify-content: space-around;
 }
 
 .Header .header-elem span:first-child {
@@ -31,6 +32,6 @@
   }
 
   .Header .header-elem span:nth-child(2) {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
