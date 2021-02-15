@@ -79,6 +79,13 @@
   #time-to-start {
     font-size: 150px;
   }
+
+  .level-selection button:hover {
+    border: none;
+    background-color: #ddd;
+    color: #000;
+    font-weight: normal;
+  }
 }
 
 @media all and (max-width: 570px) {
