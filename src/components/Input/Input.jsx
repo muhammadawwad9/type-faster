@@ -23,7 +23,7 @@ const Input = ({
   //functions
 
   const checkWord = async (e) => {
-    if (e.target.value == currentWord) {
+    if (e.target.value.toLowerCase() == currentWord.toLowerCase()) {
       if (score == highScore - 3) {
         newHighScore.play();
         fireWorks.play();

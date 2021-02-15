@@ -37,7 +37,7 @@
   cursor: pointer;
   transition-property: all;
   transition-duration: 0.3s;
-  background-color: red;
+  -webkit-appearance: none;
 }
 
 .level-selection button:hover {
