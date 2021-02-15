@@ -18,7 +18,7 @@
   font-size: 30px;
   display: -webkit-flex;
   -webkit-align-items: center;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   padding-top: 50px;
 }
 
