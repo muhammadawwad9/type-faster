@@ -26,26 +26,28 @@ const Overlay = ({ setLevel, setStartTheGame }) => {
   }, [timeToStart]);
   return (
     <div className="Overlay">
-      <div className="description">
-        <p>
-          In this game you can check how fast you are on the keyboard!.
-          <br />
-          You can choose the game level, each level has different time
-          calculations, what are you waiting for? choose the level and play!
-        </p>
-      </div>
+      <div className="overlay-items">
+        <div className="description">
+          <p>
+            In this game you can check how fast you are on the keyboard!.
+            <br />
+            You can choose the game level, each level has different time
+            calculations, what are you waiting for? choose the level and play!
+          </p>
+        </div>
 
-      <div className="level-selection">
-        <select>
-          <option value="easy">Easy</option>
-          <option value="medium">Medium</option>
-          <option value="hard">Hard</option>
-        </select>
-        <button onClick={(e) => playHandler(e)}>PLAY</button>
+        <div className="level-selection">
+          <select>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+          <button onClick={(e) => playHandler(e)}>PLAY</button>
+        </div>
+        <span id="time-to-start" className="hide">
+          {timeToStart}
+        </span>
       </div>
-      <span id="time-to-start" className="hide">
-        {timeToStart}
-      </span>
     </div>
   );
 };
