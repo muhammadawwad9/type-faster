@@ -12,7 +12,6 @@
   font-weight: bold;
   font-size: 30px;
   padding-top: 40px;
-  border: 2px solid red;
 }
 
 .overlay-items {
@@ -22,7 +21,6 @@
   align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
-  border: 2px solid white;
   padding-top: 40px;
 }
 
@@ -33,7 +31,12 @@
 .level-selection {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  align-self: center;
+  justify-content: start;
+}
+
+.level-selection > * {
+  margin-bottom: 12px;
 }
 
 .level-selection select {
@@ -69,7 +72,7 @@
 }
 
 #time-to-start {
-  font-size: 180px;
+  font-size: 150px;
 }
 
 @media all and (max-width: 950px) {
@@ -80,7 +83,7 @@
 
 @media all and (max-width: 720px) {
   #time-to-start {
-    font-size: 150px;
+    font-size: 130px;
   }
 
   .level-selection button:hover {
@@ -107,6 +110,6 @@
   }
 
   #time-to-start {
-    font-size: 100px;
+    font-size: 110px;
   }
 }
