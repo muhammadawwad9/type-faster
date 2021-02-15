@@ -7,7 +7,7 @@ const Overlay = ({ setLevel, setStartTheGame }) => {
   //functions
 
   const playHandler = (e) => {
-    e.target.style.display = "none";
+    e.target.disabled = true;
     document.querySelector("#time-to-start").classList.remove("hide");
     const countToStart = setInterval(() => {
       setTimeToStart((prev) => {
@@ -29,9 +29,8 @@ const Overlay = ({ setLevel, setStartTheGame }) => {
       <div className="overlay-items">
         <div className="description">
           <p>
-            In this game you can check how fast you are on the keyboard!.
-            <br />
-            You can choose the game level, each level has different time
+            In this game you can check how fast you are on the keyboard!. You
+            can choose the game level, each level has different time
             calculations, what are you waiting for? choose the level and play!
           </p>
         </div>

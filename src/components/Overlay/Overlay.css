@@ -11,19 +11,23 @@
   color: #fff;
   font-weight: bold;
   font-size: 30px;
+  padding-top: 40px;
+  border: 2px solid red;
 }
 
 .overlay-items {
-  min-height: 60vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  padding: 45px;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  border: 2px solid white;
+  padding-top: 40px;
 }
 
-.overlay-items * {
-  margin: 4px;
+.overlay-items > * {
+  margin-bottom: 30px;
 }
 
 .level-selection {
@@ -50,15 +54,14 @@
   background-color: #ddd;
 }
 
-.level-selection button:hover {
-  border: 2px solid green;
+.level-selection button:hover:enabled {
   background-color: green;
   color: #fff;
   font-weight: bold;
 }
 
 .description {
-  width: 50%;
+  width: 60%;
 }
 
 .hide {
@@ -66,12 +69,12 @@
 }
 
 #time-to-start {
-  font-size: 200px;
+  font-size: 180px;
 }
 
 @media all and (max-width: 950px) {
   .description {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -91,7 +94,7 @@
 @media all and (max-width: 570px) {
   .description {
     width: 90%;
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .level-selection select {
