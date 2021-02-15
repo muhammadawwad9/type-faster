@@ -7,6 +7,7 @@ const Overlay = ({ setLevel, setStartTheGame }) => {
   //functions
 
   const playHandler = (e) => {
+    e.target.style.display = "none";
     document.querySelector("#time-to-start").classList.remove("hide");
     const countToStart = setInterval(() => {
       setTimeToStart((prev) => {

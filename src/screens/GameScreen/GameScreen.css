@@ -1,7 +1,7 @@
 .GameScreen {
   width: 85%;
   margin: auto;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #278ea5;
   box-shadow: 4px 4px 100px #1f4287, -4px -4px 100px #1f4287;
   overflow: auto;
