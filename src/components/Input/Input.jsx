@@ -24,7 +24,7 @@ const Input = ({
 
   const checkWord = async (e) => {
     if (e.target.value.toLowerCase() == currentWord.toLowerCase()) {
-      if (score == highScore - 3) {
+      if (score == highScore) {
         newHighScore.play();
         fireWorks.play();
       }
@@ -38,7 +38,13 @@ const Input = ({
       incorrect.play();
       setTime((prev) => prev - timeDecrement);
       setFailedWordsArr((prev) => {
-        return [...prev, currentWord.toLowerCase()];
+        return [
+          ...prev,
+          {
+            correct: currentWord.toLowerCase(),
+            incorrect: e.target.value.toLowerCase(),
+          },
+        ];
       });
     }
     await setCrrentWord(randomWord(wordsArr));

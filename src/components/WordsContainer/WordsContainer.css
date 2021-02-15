@@ -9,26 +9,43 @@
 
 .words {
   display: flex;
-  color: #1f4287;
   font-weight: bold;
   flex-wrap: wrap;
 }
 
-.passed-word {
-  color: #0de00d;
+.main-word {
   font-weight: bold;
   font-family: monospace;
+  color: #fff;
 }
 
-.failed-word {
-  color: red;
-  font-weight: bold;
-  font-family: monospace;
+.words > span {
+  color: #1f4287;
 }
 
-.words span {
+.words > span,
+.words > div {
   border-right: 1px solid #1f4287;
   padding: 5px;
+}
+
+.two-words {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.two-words > * {
+  margin-bottom: 6px;
+}
+
+.correct-word {
+  color: #1f4287;
+}
+
+.incorrect-word {
+  color: red;
 }
 
 @media all and (max-width: 570px) {
