@@ -9,6 +9,6 @@
 
 
 ## Built With
-* React
+* React JS
 
 
