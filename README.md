@@ -9,8 +9,6 @@
 
 
 ## Built With
-* HTML
-* CSS
 * React
 
 
