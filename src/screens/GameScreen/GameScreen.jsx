@@ -28,7 +28,6 @@ const GameScreen = ({
   setPassedWordsArr,
   setFailedWordsArr,
 }) => {
-  console.log("high scores: ", highScores);
   //states
   const [scoreIncrement, setScoreIncrement] = useState(3);
   const [timeIncrement, setTimeIncrement] = useState(2);
