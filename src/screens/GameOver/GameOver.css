@@ -77,9 +77,9 @@
 }
 
 @media all and (max-width: 750px) {
-  .words-containers {
+  /* .words-containers {
     display: none;
-  }
+  } */
 
   .gameover-items .game-over-word {
     font-size: 45px;

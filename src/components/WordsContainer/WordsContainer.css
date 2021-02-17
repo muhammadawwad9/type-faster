@@ -49,9 +49,9 @@
 }
 
 @media all and (max-width: 570px) {
-  /* .WordsContainer {
+  .WordsContainer {
     display: none;
-  } */
+  }
   hr {
     display: none;
   }

@@ -24,7 +24,7 @@
 }
 
 @media all and (max-width: 750px) {
-  .words-containers {
+  /* .words-containers {
     display: none;
-  }
+  } */
 }
