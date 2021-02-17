@@ -57,6 +57,7 @@ const Input = ({
       <input
         type="text"
         onChange={(e) => {
+          e.target.value = e.target.value.replace(" ", "");
           if (e.target.value.length == currentWord.length) checkWord(e);
         }}
       />

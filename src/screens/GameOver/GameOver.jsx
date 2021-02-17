@@ -17,7 +17,7 @@ const GameOver = ({
         {score == highScores[level] ? (
           <Fragment>
             <h2 className="congrats">
-              Congratulations! You reached a new high score! 🎉🎉
+              Congratulations! You reached a new high score!
             </h2>
             <div className="new-high-score">
               <span>High Score:</span>

@@ -22,3 +22,9 @@
     width: 100%;
   }
 }
+
+@media all and (max-width: 750px) {
+  .words-containers {
+    display: none;
+  }
+}
