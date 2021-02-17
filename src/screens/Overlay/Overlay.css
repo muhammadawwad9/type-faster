@@ -77,7 +77,8 @@
 
 @media all and (max-width: 950px) {
   .description {
-    width: 100%;
+    width: 95%;
+    font-size: 26px;
   }
 }
 
@@ -97,12 +98,13 @@
 @media all and (max-width: 570px) {
   .description {
     width: 90%;
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .level-selection select {
     font-size: 35px;
     cursor: pointer;
+    outline: none;
   }
 
   .level-selection button {

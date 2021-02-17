@@ -10,6 +10,7 @@ const Input = ({
   currentWord,
   setCrrentWord,
   wordsArr,
+  level,
   setTime,
   setPassedWordsArr,
   setFailedWordsArr,
@@ -18,13 +19,13 @@ const Input = ({
   timeDecrement,
   timeIncrement,
   scoreIncrement,
-  highScore,
+  highScores,
 }) => {
   //functions
 
   const checkWord = async (e) => {
     if (e.target.value.toLowerCase() == currentWord.toLowerCase()) {
-      if (score == highScore) {
+      if (score == highScores[level]) {
         newHighScore.play();
         fireWorks.play();
       }

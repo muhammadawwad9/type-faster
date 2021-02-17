@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
 import "./GameOver.css";
 //components imports
-import WordsContainer from "../WordsContainer/WordsContainer";
+import WordsContainer from "../../components/WordsContainer/WordsContainer";
 const GameOver = ({
   score,
   highScore,

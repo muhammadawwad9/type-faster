@@ -1,10 +1,8 @@
 import React, { useState, useEffect, Fragment } from "react";
 
-//components imports
-import Overlay from "./components/Overlay/Overlay";
-import GameOver from "./components/GameOver/GameOver";
-
 //screens imports
+import GameOver from "./screens/GameOver/GameOver";
+import Overlay from "./screens/Overlay/Overlay";
 import GameScreen from "./screens/GameScreen/GameScreen";
 
 function App() {
@@ -13,20 +11,24 @@ function App() {
   const [score, setScore] = useState(0);
   const [startTheGame, setStartTheGame] = useState(false);
   const [gameOver, setGameOver] = useState(false);
-  const [highScore, setHighScore] = useState(0);
+  const [highScores, setHighScores] = useState({});
   const [passedWordsArr, setPassedWordsArr] = useState([]);
   const [failedWordsArr, setFailedWordsArr] = useState([]);
   //useEffect
   useEffect(() => {
-    const storedHighScore = localStorage.getItem("high-score");
-    if (storedHighScore) setHighScore(+storedHighScore);
+    let localHighScores = localStorage.getItem("highScores");
+    console.log("bom ", localHighScores);
+    if (localHighScores) setHighScores(JSON.parse(localHighScores));
+    else {
+      setHighScores({ easy: null, medium: null, hard: null });
+    }
   }, []);
   return (
     <div className="App">
       {gameOver ? (
         <GameOver
           score={score}
-          highScore={highScore}
+          highScores={highScores}
           setGameOver={setGameOver}
           passedWordsArr={passedWordsArr}
           failedWordsArr={failedWordsArr}
@@ -49,8 +51,8 @@ function App() {
               setPassedWordsArr={setPassedWordsArr}
               setFailedWordsArr={setFailedWordsArr}
               setStartTheGame={setStartTheGame}
-              highScore={highScore}
-              setHighScore={setHighScore}
+              highScores={highScores}
+              setHighScores={setHighScores}
               setGameOver={setGameOver}
               score={score}
               setScore={setScore}

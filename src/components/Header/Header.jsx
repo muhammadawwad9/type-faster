@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./Header.css";
-const Header = ({ level, time, score, highScore }) => {
+const Header = ({ level, time, score, highScores }) => {
   return (
     <div className="Header">
       <div className="header-elem">
@@ -20,7 +20,7 @@ const Header = ({ level, time, score, highScore }) => {
       <div className="header-elem">
         {" "}
         <span>High Score</span>
-        <span>{highScore}</span>
+        <span>{highScores[level] || 0}</span>
       </div>
     </div>
   );

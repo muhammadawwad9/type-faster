@@ -8,6 +8,7 @@ const Overlay = ({ setLevel, setStartTheGame }) => {
 
   const playHandler = (e) => {
     e.target.disabled = true;
+    document.querySelector(".level-selection select").disabled = true;
     document.querySelector("#time-to-start").classList.remove("hide");
     const countToStart = setInterval(() => {
       setTimeToStart((prev) => {

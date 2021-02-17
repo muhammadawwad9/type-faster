@@ -18,8 +18,8 @@ const GameScreen = ({
   level,
   startTheGame,
   setStartTheGame,
-  highScore,
-  setHighScore,
+  highScores,
+  setHighScores,
   setGameOver,
   score,
   setScore,
@@ -28,6 +28,7 @@ const GameScreen = ({
   setPassedWordsArr,
   setFailedWordsArr,
 }) => {
+  console.log("high scores: ", highScores);
   //states
   const [scoreIncrement, setScoreIncrement] = useState(3);
   const [timeIncrement, setTimeIncrement] = useState(2);
@@ -38,11 +39,9 @@ const GameScreen = ({
 
   //functions
   const storeInLocalStorage = () => {
-    if (score > highScore) {
-      setHighScore(score);
-      localStorage.setItem("high-score", JSON.stringify(score));
-    }
+    localStorage.setItem("highScores", JSON.stringify(highScores));
   };
+
   const countDown = () => {
     const iVal = setInterval(() => {
       setTime((prev) => {
@@ -84,19 +83,30 @@ const GameScreen = ({
     input.focus();
   }, [startTheGame]);
 
-  useEffect(() => {
+  useEffect(async () => {
     if (time <= 0) {
       gameOver.play();
       backgroundMusic.pause();
       backgroundMusic.currentTime = 0;
+
+      if (highScores[level]) {
+        if (score > highScores[level]) {
+          await setHighScores({ ...highScores, [level]: score });
+        }
+      } else {
+        await setHighScores({ ...highScores, [level]: score });
+      }
       setGameOver(true);
       setStartTheGame(false);
-      storeInLocalStorage();
     }
   }, [time]);
+
+  useEffect(() => {
+    storeInLocalStorage();
+  }, [highScores]);
   return (
     <div className="GameScreen">
-      <Header level={level} time={time} score={score} highScore={highScore} />
+      <Header level={level} time={time} score={score} highScores={highScores} />
       <div className="play-area">
         <CurrentWord currentWord={currentWord} />
         <Input
@@ -111,7 +121,8 @@ const GameScreen = ({
           timeIncrement={timeIncrement}
           scoreIncrement={scoreIncrement}
           score={score}
-          highScore={highScore}
+          highScores={highScores}
+          level={level}
         />
       </div>
       <hr />
