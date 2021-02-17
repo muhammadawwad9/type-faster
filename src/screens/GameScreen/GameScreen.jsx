@@ -68,13 +68,13 @@ const GameScreen = ({
         break;
       case "medium":
         setTime(10);
-        setTimeDecrement(5);
+        setTimeDecrement(4);
         setTimeIncrement(3);
 
         break;
       case "hard":
-        setTime(7);
-        setTimeDecrement(7);
+        setTime(8);
+        setTimeDecrement(5);
         setTimeIncrement(2);
         break;
     }
