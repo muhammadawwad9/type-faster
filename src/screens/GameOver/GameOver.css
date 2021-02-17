@@ -29,7 +29,8 @@
 .GameOver .game-over-word {
   color: rgb(255, 29, 29);
   text-shadow: 4px 4px 10px rgb(10, 10, 10);
-  font-size: 130px;
+  font-size: 112px;
+  text-align: center;
 }
 
 .GameOver .message {
@@ -40,11 +41,12 @@
 
 .congrats {
   text-align: center;
+  font-size: 30px;
 }
 
 .new-high-score {
   display: flex;
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .new-high-score > * {
@@ -84,12 +86,17 @@
   }
 
   .gameover-items .message {
-    font-size: 18px;
+    font-size: 19px;
   }
 
   .gameover-items button {
     font-size: 18px;
     width: 120px;
+  }
+
+  .congrats {
+    text-align: center;
+    font-size: 20px;
   }
 
   .new-high-score {

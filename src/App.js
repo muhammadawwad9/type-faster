@@ -17,7 +17,6 @@ function App() {
   //useEffect
   useEffect(() => {
     let localHighScores = localStorage.getItem("highScores");
-    console.log("bom ", localHighScores);
     if (localHighScores) setHighScores(JSON.parse(localHighScores));
     else {
       setHighScores({ easy: null, medium: null, hard: null });
@@ -32,6 +31,7 @@ function App() {
           setGameOver={setGameOver}
           passedWordsArr={passedWordsArr}
           failedWordsArr={failedWordsArr}
+          level={level}
         />
       ) : (
         <Fragment>
