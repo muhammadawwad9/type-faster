@@ -14,7 +14,7 @@ const GameOver = ({
     <div className="GameOver">
       <div className="gameover-items">
         <span className="game-over-word">Game Over</span>
-        {score == highScores[level] ? (
+        {score > highScores[level] ? (
           <Fragment>
             <h2 className="congrats">
               Congratulations! You reached a new high score!
