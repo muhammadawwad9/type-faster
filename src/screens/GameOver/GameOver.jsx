@@ -4,6 +4,7 @@ import "./GameOver.css";
 import WordsContainer from "../../components/WordsContainer/WordsContainer";
 const GameOver = ({
   score,
+  newHighScore,
   highScores,
   level,
   setGameOver,
@@ -14,7 +15,7 @@ const GameOver = ({
     <div className="GameOver">
       <div className="gameover-items">
         <span className="game-over-word">Game Over</span>
-        {score > highScores[level] ? (
+        {newHighScore ? (
           <Fragment>
             <h2 className="congrats">
               Congratulations! You reached a new high score!
@@ -26,7 +27,12 @@ const GameOver = ({
           </Fragment>
         ) : (
           <Fragment>
-            <h2 className="message">Good luck next time</h2>
+            <h2 className="message">
+              Good luck next time{" "}
+              {score == highScores[level]
+                ? ", you were so close to reach a new high score!"
+                : ""}
+            </h2>
             <h2>Your Score: {score}</h2>
             <h2>High Score: {highScores[level]}</h2>
           </Fragment>

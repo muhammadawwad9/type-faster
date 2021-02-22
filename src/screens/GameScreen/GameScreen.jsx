@@ -21,6 +21,7 @@ const GameScreen = ({
   highScores,
   setHighScores,
   setGameOver,
+  setNewHighScore,
   score,
   setScore,
   passedWordsArr,
@@ -91,9 +92,11 @@ const GameScreen = ({
       if (highScores[level]) {
         if (score > highScores[level]) {
           await setHighScores({ ...highScores, [level]: score });
+          setNewHighScore(true);
         }
       } else {
         await setHighScores({ ...highScores, [level]: score });
+        setNewHighScore(true);
       }
       setGameOver(true);
       setStartTheGame(false);

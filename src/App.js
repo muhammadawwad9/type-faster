@@ -10,6 +10,7 @@ function App() {
   const [level, setLevel] = useState("easy");
   const [score, setScore] = useState(0);
   const [startTheGame, setStartTheGame] = useState(false);
+  const [newHighScore, setNewHighScore] = useState(false);
   const [gameOver, setGameOver] = useState(false);
   const [highScores, setHighScores] = useState({});
   const [passedWordsArr, setPassedWordsArr] = useState([]);
@@ -27,6 +28,7 @@ function App() {
       {gameOver ? (
         <GameOver
           score={score}
+          newHighScore={newHighScore}
           highScores={highScores}
           setGameOver={setGameOver}
           passedWordsArr={passedWordsArr}
@@ -54,6 +56,7 @@ function App() {
               highScores={highScores}
               setHighScores={setHighScores}
               setGameOver={setGameOver}
+              setNewHighScore={setNewHighScore}
               score={score}
               setScore={setScore}
             />
